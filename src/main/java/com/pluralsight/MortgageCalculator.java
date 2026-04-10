@@ -37,6 +37,10 @@ public class MortgageCalculator {
 
         System.out.println(monthlyPayment);
 
+        double totalInterest = (monthlyPayment * numOfPayments) - principal;
+
+        System.out.printf("$%.2f/month payment with a total after interest of $%.2f\n", monthlyPayment, totalInterest);
+
     }
 
 }
